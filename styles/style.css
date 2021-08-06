@@ -121,9 +121,6 @@
         border-radius: 10px;
         
     }
-    .schedule-section-section{
-        margin-bottom: 100px;
-    }
     .highlight-section{
         display: flex;
     }
@@ -156,50 +153,38 @@
         transition: 1s;
     }
     
-    /*.................. 
-    main css end
-    ..................... */
     
     
-    /* ......................
-    video section css start
-        ..................... */
-    .video-section{
+    
+    
+    /*-----------------Media section CSS----------------*/
+        
+    .media-section{
         margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  
     }
-    .vedio-blog{
+    .media-blog{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5px;
         align-items: center;
         justify-content: center;
-        
-        
     }
-    .video-section h1{
+    .media-section h1{
         align-items: left;
     }
-    .video-section{
-        display: flex;
-        flex-direction: column;
-        
-        justify-content: space-between;
-    }
     
-    
-    .video video{
+    .media video{
         border-radius: 10px;
         box-shadow: 10px 10px 8px 10px #dad4d4;
     
     }
-    /* ......................
-    video section css end
-        ..................... */
     
     
-    /* ......................
-    footer section css start
-        ..................... */
+    
+    /*-----------------Footer Section CSS..................... */
     .footer-section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -212,25 +197,27 @@
     }
     
     .footer-mid i{
-        background-color: gray;
         border-radius: 10px;
         align-items: center;
         justify-content: center;
         margin-right: 5px;
     }
+    /* .news-latter{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-area: span; */
+    }
     
-    /* ......................
-    footer section css end
-        ..................... */
     
     
-    /*.................................
-    Media query 
-    ..................................*/
     
-    /* mobile devices */
+    
+    /* Media Query */
     
     @media only screen and (max-width:767px) {
+        body{
+            width: 100%;
+        }
         .header-container{
             height: 1050px;
         }
@@ -272,14 +259,17 @@
         .articale-blog{
             width: 78%;
         }
+        .articale-blog p{
+            text-align: center;
+        }
         .articale-blog img{
             width: 90%;
         }
         .highlight-section{
             display: grid;
-            grid-template-columns: 350px;
-            align-items: left;
-            justify-content: left;
+            grid-template-columns:repeat(1,1fr);
+            /* align-items: left;
+            justify-content: left; */
         }
         .watch-now-button{
            width: 300px;
@@ -289,7 +279,7 @@
         .highlight-img img{
             width: 80%;
         }
-        .vedio-blog{
+        .media-blog{
             display: grid;
             grid-template-columns: 350px;
             text-align: center;
